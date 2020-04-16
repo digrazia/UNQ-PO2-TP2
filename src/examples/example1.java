@@ -15,6 +15,8 @@ public class example1 {
 		showEmpoleyeeData(aCompany.addPermanentPlantEmpoleyee("Carlos", "cochabamba 1234", MaritalStatus.MARRIED, LocalDate.of(1977, Month.JANUARY, 1), 500., 0));
 		showEmpoleyeeData(aCompany.addPermanentPlantEmpoleyee("Roberto", "La Rioja 34", MaritalStatus.SINGLE, LocalDate.of(1988, Month.FEBRUARY, 12), 520.44, 2));
 		showEmpoleyeeData(aCompany.addTemporaryPlantEmpoleyee("Juan", "La Pampa 333", MaritalStatus.SINGLE, LocalDate.of(1988, Month.MARCH, 9), 300., LocalDate.of(2024, Month.MARCH, 23)));	
+		showEmpoleyeeData(aCompany.addContractEmpoleyee("Marcos", "Santa FE 77", MaritalStatus.WIDOWER, LocalDate.of(1990, Month.JULY, 22), 400., 443242, "Paypal"));	
+		
 		System.out.print(String.format("\n====================================\n%30s:\t$%10.2f\n","TOTAL SUELDOS NETOS", aCompany.getTotalAmountOfNetIncome()));
 	}
 	

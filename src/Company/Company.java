@@ -32,6 +32,9 @@ public class Company {
 	public TemporaryPlantEmpoleyee addTemporaryPlantEmpoleyee(String aName, String aAdress, MaritalStatus aMaritalStatus, LocalDate aBirthDate, Double aBasicSalary, LocalDate aEndDate) {
 		return (TemporaryPlantEmpoleyee) this.addEmpoleyee(new TemporaryPlantEmpoleyee(aName, aAdress, aMaritalStatus, aBirthDate, aBasicSalary, aEndDate));
 	}
+	public ContractEmpoleyee addContractEmpoleyee(String aName, String aAdress, MaritalStatus aMaritalStatus, LocalDate aBirthDate, Double aBasicSalary, Integer aContractNumber, String aPayMethod) {
+		return (ContractEmpoleyee) this.addEmpoleyee(new ContractEmpoleyee(aName, aAdress, aMaritalStatus, aBirthDate, aBasicSalary, aContractNumber, aPayMethod));
+	}
 	
 	private Empoleyee addEmpoleyee(Empoleyee newEmpoleyee) {
 		this.empoleyees.add(newEmpoleyee);
